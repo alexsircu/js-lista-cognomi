@@ -14,5 +14,8 @@ console.log(cognomiOrdinati);
 
 document.getElementById("text").innerHTML = cognomiOrdinati.join(", ");
 
-for (var i = 0; i < cognomiOrdinati.length; i++) {
-}
+var posizioneNaturale = cognomiOrdinati.indexOf(nuovoCognome);
+var posizioneUmana = posizioneNaturale + 1;
+console.log(posizioneUmana);
+
+document.getElementById("position").innerHTML = posizioneUmana;
